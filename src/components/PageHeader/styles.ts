@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { apisAreAvailable } from "expo";
 
 const styles = StyleSheet.create({
   container: {
@@ -9,6 +10,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+  },
+  header:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'space-between'
   },
   title: {
     fontFamily: "Archivo_700Bold",
