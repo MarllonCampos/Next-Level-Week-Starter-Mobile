@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { forHorizontalIOS } from "@react-navigation/stack/lib/typescript/src/TransitionConfigs/CardStyleInterpolators";
+
 
 const styles = StyleSheet.create({
   container: {
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#e6e6f0",
     borderRadius: 8,
-    marginBottom: 16,
+    marginBottom: 5,
     overflow: "hidden",
   },
   profile: {
