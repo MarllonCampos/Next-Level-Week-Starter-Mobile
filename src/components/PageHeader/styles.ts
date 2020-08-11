@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
   header:{
     flexDirection:'row',
     alignItems:'center',
-    justifyContent:'space-between'
+    justifyContent:'space-between',
+    marginTop:15
   },
   title: {
     fontFamily: "Archivo_700Bold",
@@ -22,7 +23,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 32,
     maxWidth: 160,
-    marginVertical: 40,
   },
 });
 

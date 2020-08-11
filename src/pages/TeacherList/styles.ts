@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     marginTop: -40,
   },
   searchForm: {
-    marginBottom: 24,
+    marginTop:10
   },
   label: {
     color: "#d4c2ff",
