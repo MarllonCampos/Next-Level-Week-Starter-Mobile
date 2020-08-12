@@ -28,9 +28,9 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
   const [isFavorited, setIsFavorited] = useState(favorited);
 
   function handleLinkToWhatsapp() {
-    api.post('connections',{
-      user_id:teacher.id,
-    })
+    api.post("connections", {
+      user_id: teacher.id,
+    });
     Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`);
   }
 
@@ -48,13 +48,12 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
         return teacherItem.id === teacher.id;
       });
 
-      setIsFavorited(false)
+      setIsFavorited(false);
       favoritesArray.splice(favoriteIndex, 1);
     } else {
-      
       favoritesArray.push(teacher);
-      
-      console.log(favoritesArray);
+
+      // console.log(favoritesArray);
       setIsFavorited(true);
     }
     await AsyncStorage.setItem("favorites", JSON.stringify(favoritesArray));
